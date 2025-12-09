@@ -1,22 +1,18 @@
 import 'dotenv/config';
+
 import express from 'express';
 import {
-  ButtonStyleTypes,
   InteractionResponseFlags,
   InteractionResponseType,
   InteractionType,
   MessageComponentTypes,
   verifyKeyMiddleware,
 } from 'discord-interactions';
-import { getRandomEmoji, DiscordRequest } from './utils.js';
-import { getShuffledOptions, getResult } from './game.js';
 
-// Create an express app
+import { getRandomEmoji } from './utils.js';
+
 const app = express();
-// Get port, or default to 3000
 const PORT = process.env.PORT || 3000;
-// To keep track of our active games
-const activeGames = {};
 
 /**
  * Interactions endpoint URL where Discord will send HTTP requests

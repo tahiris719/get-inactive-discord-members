@@ -1,4 +1,5 @@
 import 'dotenv/config';
+
 import { getRPSChoices } from './game.js';
 import { capitalize, InstallGlobalCommands } from './utils.js';
 

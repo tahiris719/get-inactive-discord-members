@@ -1,19 +1,10 @@
-# Getting Started app for Discord
-
-This project contains a basic rock-paper-scissors-style Discord app written in JavaScript, built for the [getting started guide](https://discord.com/developers/docs/getting-started).
-
-![Demo of app](https://github.com/discord/discord-example-app/raw/main/assets/getting-started-demo.gif?raw=true)
+# Get Inactive Members App
+This is a simple Discord app to get inactive members per guild (server). This list is primarily constructed based on if users have any roles selected and then secondary based on activity.
 
 ## Project structure
 Below is a basic overview of the project structure:
 
 ```
-├── examples    -> short, feature-specific sample apps
-│   ├── app.js  -> finished app.js code
-│   ├── button.js
-│   ├── command.js
-│   ├── modal.js
-│   ├── selectMenu.js
 ├── .env.sample -> sample .env file
 ├── app.js      -> main entrypoint for app
 ├── commands.js -> slash command payloads + helpers
@@ -37,12 +28,12 @@ Configuring the app is covered in detail in the [getting started guide](https://
 
 First clone the project:
 ```
-git clone https://github.com/discord/discord-example-app.git
+git clone https://github.com/tahiris719/get-inactive-discord-members.git
 ```
 
 Then navigate to its directory and install dependencies:
 ```
-cd discord-example-app
+cd get-inactive-discord-members
 npm install
 ```
 ### Get app credentials
