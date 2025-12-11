@@ -1,0 +1,15 @@
+name = "get-inactive-discord-members"
+main = "worker.js"
+workers_dev = true
+compatibility_date = "2025-12-09"
+compatibility_flags = ["nodejs_compat_v2"]
+
+[vars]
+# These are set manually within Cloudflare
+
+[observability]
+[observability.logs]
+enabled = false
+head_sampling_rate = 1
+invocation_logs = true
+persist = true
